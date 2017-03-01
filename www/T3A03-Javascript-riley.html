@@ -1,0 +1,25 @@
+
+<h1 align=center>Javascript by Riley</h1><br><br>
+
+<textarea id="I1">Enter stuff here</textarea><br>
+<input type= button value="Click Me!" onClick="{
+   document.getElementById('O1').innerHTML= document.getElementById('I1').value.big()
+}"><br>
+<div id="O1"> The output will go here </div><br>
+<br>
+<script type="text/javascript">
+function onoff(){
+  x = document.getElementById('onoff').value;
+  if(x == "Off"){
+    document.getElementById("onoff").value="On";
+  }else{
+    document.getElementById("onoff").value="Off";
+  }
+}
+</script>
+
+<input type="button" value="Off" id="onoff" onclick="onoff();">
+<br>
+
+<input type=button value="Back" style="font-size:25px" onclick="{window.history.back()}">
+<br><br>

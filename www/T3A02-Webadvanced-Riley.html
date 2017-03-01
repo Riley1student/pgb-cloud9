@@ -18,7 +18,7 @@ body {
 <br>
 </style>
 </head><br>
-<h2><b style="background-Color : yellow">This is my Favorite Song</b> </h2>
+<h2><b style="background-Color : yellow">This is my Favorite Song&#8756;</b> </h2>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Sevy1AEQ0is" frameborder="0" allowfullscreen></iframe>
 </center>
 
@@ -49,7 +49,7 @@ Enter x: <input type=text id="myx" value="3">
 document.getElementByI('myOut').innerHTML = 'WOW'
     }">
     
-    <br>Else if Version - Hint Coming Soon<br>
+    <br>Else if Version<br>
 
 Enter y: <input type=text id="myy" value="3">
 
@@ -91,29 +91,138 @@ Enter y: <input type=text id="myy" value="3">
           
 document.getElementById('myOut').innerHTML = myTemp
     }">
-    
+    <button onclick="myFunction()"><b>Hint</b>*</button>
+    <head>
+<style>
+#myDIV {
+    display: none;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top:2px;
+}
+</style>
+</head>
+<body>
+
+<div id="myDIV" class="hidden">
+Try Doing a negative Number or try adding a digit in
+the positive number line, try 4, and under 4. Having Fun Trying Numbers.
+</div>
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById('myDIV');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+</script>
+
+
+
+</body>
+</html>
+
+
 
     <div id="myOut">Output goes here</div>
-    <br><br><br>
+ 
+<h3>Complex If Statements</h3>
+
+Enter E: <input type=text id="myCC" value="2"><br>
+Enter F: <input type=text id="myCB" value="5"><br>
+
+<input type=button value="Complex if" onclick="{
+   document.getElementById('myOut3').innerHTML = ''
+   E = document.getElementById('myCC').value
+   F = document.getElementById('myCB').value
+
+
+
+   if ((E == 2) && (F == 5)){
+      document.getElementById('myOut3').innerHTML += E + 
+          ', ' + F + ' E=2 and F=5 <br>'
+   }
+
+   if ((E > 2) && (F < 5)){
+      document.getElementById('myOut3').innerHTML += E + 
+          ', ' + F + ' E>2 AND F<5 <br>'
+   }
+
+   if ((E == 2) && (F != 5)){
+      document.getElementById('myOut3').innerHTML += E + 
+          ', ' + F + ' E=2 and F does not = 5 <br>'
+   }
+   
+   
+   
+    if ((E < 3) || (E > 5)){
+      document.getElementById('myOut3').innerHTML += E + 
+          ', ' + F + ' (E < 3) || (F > 5) <br>'
+   }
+             
+
+        
+}">
+
+<BR>
+try 2,5 OR  3,4 <br>  
+    <div id="myOut3">Output goes here</div><br>
     
-    Enter A: <input type=text id="mya" value="2"><br>
-    Enter B: <input type=text id="myb" value="5"><br>
-    
-    <input type=button value="complex if" onclick="{
-        document.getElementById('myOut2').innerHTML = ''
-        a = document.getelementById('mya').value
-        b = document.getelementById('myb').value
-        if ((a == 2) && (b == 5)){
-    document.getElementById('myOut2').innerHTML += a +
-    ', ' + b + ' A=2 and b=5 <br>'
-    }
-    
-    if ((a >=2) && (b <= 5)){
-        document.getElementById('myOut2').innerHTML += a +
-          ', ' + b + + 'a>=2 and b<=5    <br>'
-          }
-         
-         }"><br>
+    <br><br>Time for a Spelling Test - <b>NOT YET WORKING</b><br>
+    1. In the sky at night there is many ______<!--stars-->.<BR>
+    2. I Read from a ____<!--book-->.<BR>
+    3. The Wet Form to Snow. It's ____ing<!--Rain-->.<BR>
+    4. I am Going Camping and I will make a Camp____<!--fire-->.<BR>
+    5. I am Driving and I Have to ____ at a ____ sign. (Both Blanks are the Same word) <!--stop--><BR>
+
+Enter The First Letter: <input type=text id="LA1" placeholder="Write a letter"><br>
+Enter The Second Letter: <input type=text id="LA2" placeholder="Write a letter"><br>
+Enter The Third Letter: <input type=text id="LA3" placeholder="Write a letter"><br>
+Enter The Forth Letter: <input type=text id="LA4" placeholder="Write a letter"><br>
+Enter The Fifth Letter: <input type=text id="LA5" placeholder="Leave blank if no letter"><br>
+
+<input type=button value="Complex if" onclick="{
+   document.getElementById('myOut2').innerHTML = ''
+   A = document.getElementById('LA1').value
+   B = document.getElementById('LA2').value
+   C = document.getElementById('LA3').value
+   D = document.getElementById('LA4').value
+   E = document.getElementById('LA5').value
+
+
+
+   if (( A == s) && ( B == t) && ( C == a) && ( D == r) && ( E == s)){
+      document.getElementById('myOut2').innerHTML += 'Congradulations You Spelled the word correctly!' <br>'
+   }
+
+   if ((y > 2) && (z < 5)){
+      document.getElementById('myOut2').innerHTML += y + 
+          ', ' + z + ' y>2 AND z<5 <br>'
+   }
+
+   if ((y == 2) && (z != 5)){
+      document.getElementById('myOut2').innerHTML += y + 
+          ', ' + z + ' y=2 and z does not = 5 <br>'
+   }
+   
+   
+   
+    if ((y < 3) || (y > 5)){
+      document.getElementById('myOut2').innerHTML += y + 
+          ', ' + z + ' (y < 3) || (y > 5) <br>'
+   }
+             
+
+        
+}">
+
     <div id="myOut2">Output goes here</div>
     <br>
     <input type=button value="Back" style="font-size:25px" onclick="{window.history.back()}">
+    <h5>* = On First load you may be required to Click the button Twice for it to work. </h5>

@@ -1,0 +1,26 @@
+<h1>Instructions</h1>
+
+Write code to flip the name on the button to first say "off" then when you click it to say "on" then "off" again<br>
+
+<h3>Version 1</h3>
+<input type=button value=Off onclick="this.value = this.value == 'Off' ? 'On' : 'Off';">
+<h3>Version 2</h3>
+<script type="text/javascript">
+function onoff(){
+  x = document.getElementById('onoff').value;
+  if(x == "Off"){
+    document.getElementById("onoff").value="On";
+  }else{
+    document.getElementById("onoff").value="Off";
+  }
+}
+</script>
+
+<input type="button" value="Off" id="onoff" onclick="onoff();">
+<h3>Original Version - Unedited</h3>
+<input id="myButton1" type=button value="Off" onclick="{
+   document.all.myButton1.value = 'On but when you click it again it still says on???'
+}">
+<!--<br>At the bottom of every page make sure you include the following button:--><br><br>
+
+<input type=button value="Back" style="font-size:25px" onclick="{window.history.back()}"><br><br>

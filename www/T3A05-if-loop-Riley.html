@@ -1,0 +1,30 @@
+<h1 align=center> if loop by Riley</h1> <br>
+
+
+
+My Number My Name:
+<input type=text id="myIn" value=20>
+
+<input type=button value="My Name some amount of times" onClick="{
+myTemp=''
+
+for (myLoop=1; myLoop <= document.all.myIn.value; myLoop++){
+     myTemp+='<br>loop is '+myLoop +' Riley'
+     if((myLoop >= 4 ) && (myLoop <= 7)){myTemp += '<font color=#ff0000>Riley</font>'}
+}
+
+
+
+getElementById('myOut').innerHTML = myTemp
+}">
+
+<div id="myOut"> Output Here </div>
+
+4-7 = Red<br>
+11-13 = Green<br>
+15-20 = background color blue<br>
+
+<br>
+    <input type=button value="Back" style="font-size:25px" onclick="{window.history.back()}">
+    
+    <!--11%2-->
