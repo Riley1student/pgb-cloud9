@@ -1,27 +1,30 @@
+<title>Term 3 Assignment 4</title>
+<h1 align=center>Javascript Loops by Riley</h1><br>
+<!--(assignment -- Make loop that adds last number twice and then adds one)-->
 
-<h1 align=center>Javascript Loops by Riley</h1><br><br>
+Enter the number of Loops you would Like:<input type=text id="myIn" Placeholder=Any_Number_Works value=650><br>
+Enter the starting number you would Like :   <input type=text id="myArea02" Placeholder="Any_Number_Works"><br><br>
 
+<input type=button value="click me to get the Result" onclick="{  
+  myTemp = 0
 
+  myValue = Number(document.getElementById('myArea02').value)
 
-<br><br>
+   document.getElementById('myDiv02').innerHTML = 'My Loop number 1 is equal to ' + document.getElementById('myArea02').value + '<br>'
+   
+  for (myLoop=2; myLoop<= document.all.myIn.value; myLoop++){
+      
+     myTemp = myValue + myValue + 1
+     
+     document.getElementById('myDiv02').innerHTML += 
+         'My Loop number '+ myLoop + ' is equal to ' +myTemp + ' this is done by adding ' + myValue + ' and ' + myValue + ' and adding 1 <br>'
+      myValue = Number(myTemp)
+  }
 
-Enter a number for my Loop:
-<input type=text id="myIn" value=20>
+}"><br><br>
 
-<!--input type=button value="Solve" onClick="{
-myTemp=''
-document.getElementById('myOut').innerHTML = ''
-for (myLoop=1; myLoop <=  document.all.myIn.value; myLoop++){
-     myTemp+='<br> my loop number for number '+ myLoop + ' is ' + (myLoop * 2 + 1)
-     if(myLoop == 1){myTemp += ' 4'}	
-}
+<div id="myDiv02">The Output will go here</div>
 
-
-getElementById('myOut').innerHTML = myTemp
-}"-->
-
-<div id="myOut"> Output Here </div>
-
-(assignment -- Make loop that adds last number twice and then adds one)<br>
+<br><br><br><br>
 
 <input type=button value="Back" style="font-size:25px" onclick="{window.history.back()}">
