@@ -6,45 +6,25 @@
 <body bgcolor=blue onkeydown="{
 if ( String.fromCharCode(event.keyCode) == 'D') {
      document.getElementById('myD').click() 
+     } else if ((event.keyCode) == '39') {
+     document.getElementById('myD').click() 
      } else if ( String.fromCharCode(event.keyCode) == 'W') {
      document.getElementById('myW').click() 
+     } else if ((event.keyCode) == '38') {
+     document.getElementById('myW').click()
           } else if ( String.fromCharCode(event.keyCode) == 'S') {
+     document.getElementById('myS').click()
+     } else if ((event.keyCode) == '37') {
+     document.getElementById('myA').click()
+     } else if ((event.keyCode) == '40') {
      document.getElementById('myS').click()
          } else if ( String.fromCharCode(event.keyCode) == 'A') {
      document.getElementById('myA').click()
  }
 }">
 
-<input type=button id="myD" value="D" onclick="{
 
-document.getElementById('my01').style.left = 
-  parseInt(document.getElementById('my01').style.left) + 
-  30 + 'px'
 
-}">
-
-<input type=button id="myW" value="W" onclick="{
-
-document.getElementById('my01').style.top = 
-  parseInt(document.getElementById('my01').style.top) -
-  30 + 'px'
-
-}">
-<input type=button id="myS" value="S" onclick="{
-
-document.getElementById('my01').style.top = 
-  parseInt(document.getElementById('my01').style.top) + 
-  30 + 'px'
-
-}">
-
-<input type=button id="myA" value="A" onclick="{
-
-document.getElementById('my01').style.left = 
-  parseInt(document.getElementById('my01').style.left) -
-  30 + 'px'
-
-}">
 
 <img id="my01" style="position:relative; left:0px; top:0px;" 
     src="Photos/NoImageYet-min.jpg">
@@ -52,4 +32,36 @@ document.getElementById('my01').style.left =
 </body>
 
 <br></b></font>
-    <input type=button value="Back" style="font-size:25px" onclick="{window.history.back()}">
+    
+    
+    <table border=2 BORDER-COLOR=WHITE>
+ <tr><td><center> </center></td><td><center><input type=button id="myW" value="W OR &#8593;" onclick="{
+
+document.getElementById('my01').style.top = 
+  parseInt(document.getElementById('my01').style.top) -
+  30 + 'px'
+
+}"></center></td><td><center></center></td></tr>
+ <tr><td><center><input type=button id="myA" value="A OR &#8592;" onclick="{
+
+document.getElementById('my01').style.left = 
+  parseInt(document.getElementById('my01').style.left) -
+  30 + 'px'
+
+}"></center></td><td><center></center></td><td><center><input type=button id="myD" value="D OR &#8594;" onclick="{
+
+document.getElementById('my01').style.left = 
+  parseInt(document.getElementById('my01').style.left) + 
+  30 + 'px'
+
+}"></center></td></tr>
+  <tr><td><center></center></td><td><center><input type=button id="myS" value="S OR &#8595;" onclick="{
+
+document.getElementById('my01').style.top = 
+  parseInt(document.getElementById('my01').style.top) + 
+  30 + 'px'
+
+}"></center></td><td><center></CENTER></td></tr>
+ </table>
+ <BR><br>
+     <input type=button value="Back" style="font-size:25px" onclick="{window.history.back()}">
