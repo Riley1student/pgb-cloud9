@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<style>
+h1 {color: hotpink;
+    background-color: lightblue;
+   text-align: center
+}
+   </style>
+<body>
+    <title>Term 3 Assignment 9</title>
+<div id="header"></div>
+<h1>Arrays</h1>
+
+<script id=name>
+    
+    document.myHuman = new Array(7)
+    document.myHuman[0] = 'Don'
+    document.myHuman[1] = 'Bart'
+    document.myHuman[2] = 'Shawn'
+    document.myHuman[3] = 'Meg'
+    document.myHuman[4] = 'Rita'
+    document.myHuman[5] = 'John'
+    document.myHuman[6] = 'Richard'
+    document.myHuman[7] = 'Martin'
+    
+</script>
+
+<input type=button value="Show Array" onclick="{
+    document.getElementById('myDiv1').innerHTML = ''
+for (myLoop= 0; myLoop <=7; myLoop++){
+    document.getElementById('myDiv1').innerHTML += 'human ' + myLoop + ' ' + document.myHuman[myLoop] + '<br>'
+}
+}">
+
+
+<div id="myDiv1">output here</div>
+</body>
+</html>
+
+<br><input type=button value="Back" style="font-size:25px" onclick="{window.history.back()}">
+
+<html>
+<head>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<div id="footer"></div>
+<script> 
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+</script> 
+</body>
+</html>

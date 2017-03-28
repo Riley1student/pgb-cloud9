@@ -1,5 +1,6 @@
 <html> <head>
 <title>Term 3 Assignment 7</title>
+<div id="header"></div>
 </html> </head>
 
 
@@ -65,3 +66,16 @@ document.getElementById('my01').style.top =
  </table>
  <BR><br>
      <input type=button value="Back" style="font-size:25px" onclick="{window.history.back()}">
+     <html>
+<head>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<div id="footer"></div>
+<script> 
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+</script> 
+</body>
+</html>

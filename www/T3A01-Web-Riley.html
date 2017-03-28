@@ -1,4 +1,5 @@
 <title>Term 3 Assignment 1</title>
+<div id="header"></div>
 <h1><center><font color"#006600"></font> These are my favorite ...</center></h1>
 <h4>Please note Images of the items below will be posted soon. I am currently in contact with various places to obtain legal use of the images and to make sure they are Ok with me using the images.(I Have had a few Declines for use of images) (This is due to Copyright Policies).</h4>
 <h3><a href="/copyright.html" target="_blank" onclick="window.open('/copyright.html', 'popup', 'height=775, width=792'); return false;">To View Copyright Information Please Click Here (this is due to the fact that these are not my Images)</a></h3>
@@ -74,3 +75,16 @@ return false; }
 
 <input type=button value="Back" style="font-size:25px" onclick="{window.history.back()}">
 <h5>* = At this Current Time this button does not work and will just Reload this Page. </h5>
+<html>
+<head>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<div id="footer"></div>
+<script> 
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+</script> 
+</body>
+</html>
