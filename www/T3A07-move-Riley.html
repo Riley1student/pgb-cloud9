@@ -36,13 +36,19 @@ if ( String.fromCharCode(event.keyCode) == 'D') {
     
     
     <table border=2 BORDER-COLOR=WHITE>
- <tr><td><center> </center></td><td><center><input type=button id="myW" value="W OR &#8593;" onclick="{
+ <tr><td><center> <input type=button align=center value="↖" onclick="{
+		document.getElementById('my01').style.left  = parseInt(document.getElementById('my01').style.left)-30+'px'
+		document.getElementById('my01').style.top  = parseInt(document.getElementById('my01').style.top)-30+'px'
+		}"></center></td><td><center><input type=button id="myW" value="W OR &#8593;" onclick="{
 
 document.getElementById('my01').style.top = 
   parseInt(document.getElementById('my01').style.top) -
   30 + 'px'
 
-}"></center></td><td><center></center></td></tr>
+}"></center></td><td><center>		<input type=button align=center value="↗" onclick="{
+		document.getElementById('my01').style.left  = parseInt(document.getElementById('my01').style.left)+30+'px'
+		document.getElementById('my01').style.top  = parseInt(document.getElementById('my01').style.top)-30+'px'
+		}"></center></td></tr>
  <tr><td><center><input type=button id="myA" value="A OR &#8592;" onclick="{
 
 document.getElementById('my01').style.left = 
@@ -56,13 +62,19 @@ document.getElementById('my01').style.left =
   30 + 'px'
 
 }"></center></td></tr>
-  <tr><td><center></center></td><td><center><input type=button id="myS" value="S OR &#8595;" onclick="{
+  <tr><td><center>		<input type=button align=center value="↙" onclick="{
+		document.getElementById('my01').style.left  = parseInt(document.getElementById('my01').style.left)-30+'px'
+		document.getElementById('my01').style.top  = parseInt(document.getElementById('my01').style.top)+30+'px'
+		}"></center></td><td><center><input type=button id="myS" value="S OR &#8595;" onclick="{
 
 document.getElementById('my01').style.top = 
   parseInt(document.getElementById('my01').style.top) + 
   30 + 'px'
 
-}"></center></td><td><center></CENTER></td></tr>
+}"></center></td><td><center>	<input type=button align=center value="↘" onclick="{
+		document.getElementById('my01').style.left  = parseInt(document.getElementById('my01').style.left)+30+'px'
+		document.getElementById('my01').style.top  = parseInt(document.getElementById('my01').style.top)+30+'px'
+		}"></CENTER></td></tr>
  </table>
  <BR><br>
      <input type=button value="Back" style="font-size:25px" onclick="{window.history.back()}">

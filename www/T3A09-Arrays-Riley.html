@@ -31,6 +31,12 @@ for (myLoop= 0; myLoop <=7; myLoop++){
     document.getElementById('myDiv1').innerHTML += 'human ' + myLoop + ' ' + document.myHuman[myLoop] + '<br>'
 }
 }">
+<input type=button value="Sort Array" onclick="{
+document.getElementById('myDiv1').innerHTML = ''
+    for (myLoop = 0; myLoop <= 6; myLoop++){
+    document.getElementById('myDiv1').innerHTML += 'human ' + myLoop + ' ' + document.myHuman.sort()[myLoop] + ' ' + '<br>'
+    }
+}">
 
 
 <div id="myDiv1">output here</div>
