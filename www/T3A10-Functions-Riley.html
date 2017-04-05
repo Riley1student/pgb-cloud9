@@ -11,15 +11,29 @@ h1 {color: white;
 <div id="header"></div>
 <h1>Functions</h1>
 
-<script id=name>
-    
-    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#g").click(function(){
+        $("#myDiv1").css("color", "green")
+            .slideUp(1000)
+            .slideDown(2000);
+    });
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#b").click(function(){
+        $("#myDiv1").css("color", "black")
+           .slideUp(1000)
+            .slideDown(2000); 
+    });
+});
 </script>
 
 </body>
 </html>
-
-<br><input type=button value="Back" style="font-size:25px" onclick="{window.history.back()}">
 
 <html>
  
@@ -30,24 +44,95 @@ function myAlert(myWords){
     document.getElementById('myDiv1').innerHTML = myWords
 }    
 </script>
-<bR>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#myDiv1").on("click", function(){
+        $(this).hide();
+    });
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("out").on("click", function(){
+        $(this).hide();
+    });
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#c").click(function(){
+        $("out").text("I have to say I like my statement about");
+    });
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#c").click(function(){
+        $("out").css("color", "black")
+            .slideUp(0)
+            .slideDown(0);
+    });
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#g").click(function(){
+        $("out").css("color", "green")
+            .slideUp(1000)
+            .slideDown(2000);
+    });
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#b").click(function(){
+        $("out").css("color", "black")
+           .slideUp(1000)
+            .slideDown(2000); 
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#info").on("click", function(){
+        $("#info").hide();
+        $("#opp").show();
+    });
+});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#opp").click(function(){
+        $("#info").css("color", "black")
+            .slideUp(0)
+            .slideDown(0);
+             $("#opp").hide();
+    });
+});
+</script>
+<p id=info>Click one of the buttons below to change the statement below. Click this statement or the statement below to make it disapear, to make it reappear click one of the Jquery function buttons (regular function does not make the statement reappear).</p>
+<button id=opp>Click for the page information to reappear.<br></button><br>
+<input id="myText1" size=100 type=text value="Fred <font color=red> Smith</font>."><br>
 
-
-<input id="myText1" size=100 type=text value="Fred <font color=red> Smith </font>."><br>
-
-<input type=button value="Regular Function" onclick="{
+<input type=button value="Make the text above be shown below using a Regular Function" onclick="{
   myAlert(document.getElementById('myText1').value)
 }">
+<button id=c>Click to add a few words using a jQuery Function</button><br>
+<button id=g style="background-color:lightgreen">Click to change the text to Green using a jQuery Function</button>
+<button id=b style="background-color:grey">Click to change the text to Black using a jQuery Function</button>
+<br>
 
-<input type=button value="jQuery Function" onclick="{
-  alert('you do it for 8/9')
-}">
-
-
-<div id="myDiv1">output goes here</div>
+<out></out><div id=myDiv1 class="hi">the function result.</div>
 </head>
 <body>
-
+<br><input type=button value="Back" style="font-size:25px" onclick="{window.history.back()}">
 <div id="footer"></div>
 <script> 
   $("#header").load("header.html"); 
