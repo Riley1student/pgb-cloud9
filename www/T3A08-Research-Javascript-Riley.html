@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <style>
-tr:hover {background-color: #f5f5f5}
+tr:hover {background-color: #808080}
 .top:hover {background-color: transparent}
 h1 {color:darkblue;
    text-align: center
@@ -12,8 +12,11 @@ h1 {color:darkblue;
 <title>Term 3 Assignment 8</title>
 <div id="header"></div>
 <h1>Javascript Research by Riley</h1>
+<center style=background-color:DarkGray><br><button onclick="location.href='https://drive.google.com/open?id=1-brtAO3m95bgfpunz4pj3XPSoP6GJt8ptkg2WdBBQpg'" type="button">
+     <b>Click here to go to this research on Google Docs</b></button><br>
+     <p>If you would like copy and paste https://drive.google.com/open?id=1-brtAO3m95bgfpunz4pj3XPSoP6GJt8ptkg2WdBBQpg in your browser to go there instead.</p><br></center>
 <table style="width:100%" margin="0">
-  <tr class="top"> +
+  <tr class="top">
  
    
     <th style="width:50%">Code used</th>
@@ -90,16 +93,101 @@ document.getElementById("demo2").innerHTML = "Today is " + day;
 </script></td>
   </tr>
   <tr>
-    <td>John</td>
-    <td>Doe</td>
+    <td>
+     &lt;p&gt;PI is celebrated on March 14&lt;/p&gt;<BR>
+&lt;p id="pi"&gt;&lt;/p&gt;<BR>
+&lt;script&gt;<BR>
+document.getElementById("pi").innerHTML = Math.PI;<BR>
+&lt;/script&gt;
+</td>
+    <td><p>PI is celebrated on March 14</p>
+<p id="pi"></p>
+<script>
+document.getElementById("pi").innerHTML = Math.PI;
+</script></td>
   </tr>
+  <tr>
+   <td>&lt;p&gt;A random number between 0 and 100.&lt;/p&gt;<br>
+
+&lt;p id="NUMBER"&gt;&lt;/p&gt;<br>
+
+&lt;script&gt;<br>
+document.getElementById("NUMBER").innerHTML =<br>
+Math.floor(Math.random() * 101);<br>
+&lt;/script&gt;</td>
+<td><p>A random number between 0 and 100.</p>
+
+<p id="NUMBER"></p>
+
+<script>
+document.getElementById("NUMBER").innerHTML =
+Math.floor(Math.random() * 101);
+</script></td>
+  </tr>
+    <tr>
+    <td>&lt;button onclick="myFunction()"&gt;Try it&lt;/button&gt;<br>
+
+&lt;script><br>
+function myFunction() { <br>
+    alert("Hi");<br>
+}
+&lt;/script></td>
+    <td><button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+    alert("Hi");
+}
+</script></td>
+  </tr><tr><td>&lt;p id="myperson">&lt;/p><br>
+
+&lt;script><br>
+var person = {<br>
+    firstName : "Robert",<br>
+    lastName  : "Maze",<br>
+    age       : 32,<br>
+    eyeColor  : "pink"<br>
+};<br>
+
+document.getElementById("myperson").innerHTML =<br>
+person.firstName + " is " + person.age + " years old.";
+&lt;/script></td><td><p id="myperson"></p>
+
+<script>
+var person = {
+    firstName : "Robert",
+    lastName  : "Maze",
+    age       : 32,
+    eyeColor  : "pink"
+};
+
+document.getElementById("myperson").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script></td></tr>
+<tr><td>&lt;p id="add">&lt;/p><br>
+
+&lt;script><br>
+document.getElementById("add").innerHTML = 7 + 33;<br>
+&lt;/script></td><td><p id="add"></p>
+
+<script>
+document.getElementById("add").innerHTML = 7 + 33;
+</script></td></tr>
+<tr><td>&lt;button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the light&lt;/button><br>
+
+&lt;img id="myImage" src="pic_bulboff.gif" style="width:100px"><br>
+
+&lt;button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button></td>
+<td><button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the light</button><br>
+
+<img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px"><br>
+
+<button onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button></td></tr>
 </table>
 
-'#'+Math.floor(Math.random()*16777215).toString(16);
 </body>
 </html>
 
-buttons with backdrop can be found at https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_js_modal_backdrop&stacked=h
 <br><input type=button value="Back" style="font-size:25px" onclick="{window.history.back()}">
 <html>
 <head>
@@ -118,12 +206,3 @@ buttons with backdrop can be found at https://www.w3schools.com/bootstrap/tryit.
 <head>
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 </head>
-<body>
-
-<div id="footer"></div>
-<script> 
-  $("#header").load("header.html"); 
-  $("#footer").load("footer.html"); 
-</script> 
-</body>
-</html>

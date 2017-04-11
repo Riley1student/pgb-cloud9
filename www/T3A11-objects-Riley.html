@@ -88,18 +88,57 @@ function myStudentInfo(){
     myKreg = new myStudent(13, 'Tommey', 'http://www.rd.com/wp-content/uploads/sites/2/2016/02/06-train-cat-shake-hands.jpg')
     myKreg.myInfo()    
 }"><br>
-<input type=button value="Meet Me" onclick="{
+<input type=button value="Meet Me" id="me" onclick="{
    myDyllin = new myStudent(18, 'Riley','http://www.midsouth.com/files/MAC_computer_sales_service_midsouth.com---4-.jpg' )
    myDyllin.myInfo()
+}"><br>
+
+
+<script id=name>
+    
+    document.myHuman = new Array(9)
+    document.myHuman[0] = 'Sheila'
+    document.myHuman[1] = 'David'
+    document.myHuman[2] = 'Margaret'
+    document.myHuman[3] = 'Albert'
+    document.myHuman[4] = 'Kathy'
+    document.myHuman[5] = 'Anthony'
+    document.myHuman[6] = 'Amelia'
+    document.myHuman[7] = 'Ben'
+    document.myHuman[8] = 'Tommey'
+    document.myHuman[9] = 'Riley'
+    
+    document.age = new Array(9)
+    document.age[0] = '60'
+    document.age[1] = '65'
+    document.age[2] = '65'
+    document.age[3] = '70'
+    document.age[4] = '45'
+    document.age[5] = '50'
+    document.age[6] = '16'
+    document.age[7] = '8'
+    document.age[8] = '13'
+    document.age[9] = '18'
+    
+    document.pre = new Array(9)
+    document.pre[0] = '<img src="http://www.ferncliffgardens.com/Images/2014/363/CIMG4075.jpg" alt="A picture that represents me." width="70">'
+    document.pre[1] = '<img src="http://www.tractors.pk/resources/tractor_mf_350.png" alt="A picture that represents me." width="70">'
+    document.pre[2] = '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/2000px-Heart_coraz%C3%B3n.svg.png" alt="A picture that represents me." width="70">'
+    document.pre[3] = '<img src="https://animalcorner.co.uk/wp-content/uploads/2015/02/cows-1.jpg" alt="A picture that represents me." width="70">'
+    document.pre[4] = '<img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/The_Big_Bang_Theory_(Official_Title_Card).png/250px-The_Big_Bang_Theory_(Official_Title_Card).png" alt="A picture that represents me." width="70">'
+    document.pre[5] = '<img src="https://c1.staticflickr.com/5/4089/5215600156_7b2efa39b0_b.jpg" alt="A picture that represents me." width="70">'
+    document.pre[6] = '<img src="https://upload.wikimedia.org/wikipedia/commons/7/76/EnPointeFoot.jpg" alt="A picture that represents me." width="70">'
+    document.pre[7] = '<img src="http://www.ferncliffgardens.com/Images/2017/FINAL/FRIENDS/BEN1.JPG" alt="A picture that represents me." width="70">'
+    document.pre[8] = '<img src="http://www.rd.com/wp-content/uploads/sites/2/2016/02/06-train-cat-shake-hands.jpg" alt="A picture that represents me." width="70">'
+    document.pre[9] = '<img src="http://www.midsouth.com/files/MAC_computer_sales_service_midsouth.com---4-.jpg" alt="A picture that represents me." width="70">'
+</script>
+
+<input type=button value="Show All Information in an Array" onclick="{
+    document.getElementById('myDiv1').innerHTML = ''
+for (myLoop= 0; myLoop <=9; myLoop++){
+    document.getElementById('myDiv1').innerHTML += '<br>Person number ' + (myLoop + 1) + ' is named ' + document.myHuman[myLoop] + '.<br>' + document.myHuman[myLoop] + ' is ' + document.age[myLoop] + ' years old.<br> A picture that represents ' + document.myHuman[myLoop] + ' is <br>' + document.pre[myLoop] + '<br>'
+}
 }">
-
-
-
-
-
-
-
-
 
 
 
